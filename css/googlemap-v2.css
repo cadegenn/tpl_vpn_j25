@@ -1,0 +1,44 @@
+.googlemap_info {
+	width: 350px;
+}
+
+.googlemap_info p {
+	text-align: justify;
+}
+
+.map_thumb span {
+	width: 275px;
+	display: inline-block;
+	text-align:center;
+}
+.map_thumb img {
+	height:300px;
+	opacity: 0.5;
+	filter : alpha(opacity=50); 
+}
+.map_thumb a:hover img {
+	opacity: 1;
+	filter : alpha(opacity=100);
+}
+
+.thumb_world {
+	float:right;
+/*	z-index:5;*/
+}
+
+.thumb_rhones-alpes {
+/*	clear:left;*/
+	float:left;
+/*	margin-top:-20%;*/
+/*	z-index:5;*/
+}
+
+.thumb_france {
+/*	float:left;
+/*	position:relative;*/
+/*	margin-top:-10%;*/
+/*	margin-left:10%;*/
+	margin-right:4%;
+/*	margin:auto;*/
+/*	z-index:10;*/
+}

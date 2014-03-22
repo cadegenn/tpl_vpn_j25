@@ -1,0 +1,648 @@
+@charset "utf-8";
+/* CSS Document 
+ *
+ * Ce document contient les styles de tout ce est représenté en <block> :
+ * . <div>
+ * . <blockquote>
+ * . <fieldset>
+ *
+ */
+
+@font-face { font-family:mcgannahan; src:url(../fonts/mcgarg__.ttf); }
+@font-face {
+    font-family: 'ImpactRegular';
+    src: url('../fonts/impacted-webfont.eot');
+    src: url('../fonts/impacted-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/impacted-webfont.woff') format('woff'),
+         url('../fonts/impacted-webfont.ttf') format('truetype'),
+         url('../fonts/impacted-webfont.svg#ImpactRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	/* Internet Explorer */
+	font-family: 'TrashHand';
+	src: url('../fonts/trashhand-webfont.eot');
+}
+
+@font-face {
+	/* everything else */
+	font-family: 'TrashHand';
+	src: url(//:) format('no404'), url('../fonts/trashhand-webfont.woff') format('woff'), url('../fonts/trashhand-webfont.ttf') format('truetype'), url('../fonts/trashhand-webfont.svg#webfontUSoVVJZm') format('svg');
+}
+
+.blockquote {
+	background: url(../images/items/quotes-open.png) no-repeat 2px 5px;
+	border-radius: 20px;
+    -moz-border-radius: 20px;  
+    -webkit-border-radius: 20px;  
+    behavior: url(js/border-radius.htc); /* pour ie */
+}
+.blockquote blockquote {
+	background: transparent url(../images/items/quotes-close.png) no-repeat right bottom!important;
+	padding: 25px 50px;
+	font-style:italic;
+	font-family: arial;
+}
+
+div.chantier_preview {
+	border-bottom:dotted 1px grey;
+	/*padding-top:1%;
+	margin-bottom:1%;*/
+	margin-top:1%;
+	margin-bottom:1%;
+	padding-bottom:1%;
+	min-height: 77px;
+}
+div.chantier_preview > img {
+	float: left;
+	margin-right: 5px;
+}
+div.chantier_preview > em {
+	/*display: block;*/
+}
+
+div.right_chantier_preview {
+	float: right;
+	width: 20%;
+	text-align: justify;
+	font-size: 0.6em;
+}
+div.right_chantier_preview img {
+	float: left;
+	height: 16px;
+}
+
+.detail_chantier {
+	text-align:justify;
+ 	font-family: Arial, Helvetica, sans-serif;
+	/*font-weight:bold;*/
+	color:black;
+	font-size: 17px;
+}
+
+.thumb_chantiers {
+	margin-top:1%;
+	margin-bottom:3%;
+	text-align:center;
+}
+.thumb_chantiers > div {
+	float:left;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	/*border-left:1px solid white;
+	border-right:1px solid white;*/
+	margin:1% 9px 3% 9px;	/* centre_content2columns.width (713px) / 6 (6 images par ligne) - 100px (div.width) = 18.xxx /2 pour chaque c�t� = 9px */
+	-webkit-box-shadow: 0px 0px 32px #222;
+	-moz-box-shadow: 0px 0px 32px #222;
+	box-shadow: 0px 0px 32px #222;
+}
+.thumb_chantiers img.landscape {
+	height:100px;
+	/*margin:5px;;*/
+	/*border: 2px white solid;*/
+}
+.thumb_chantiers img.portrait {
+	width:100px;
+	/*margin:5px;;*/
+	/*border: 2px white solid;*/
+}
+.thumb_chantiers ul {
+	width:100%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+.thumb_chantiers a {
+	width:6em;
+	text-decoration:none;
+	/*color:blue;*/
+	/*padding:0.2em 0.6em;*/
+/*	border-left:1px solid white;
+	border-right:1px solid white;*/
+}
+.thumb_chantiers a:hover {
+	/*color:navy;*/
+}
+.thumb_chantiers li { display:inline; }
+
+div.finished {
+    position:absolute;
+    margin-top:10%;
+    color:#990000;
+    font-family:ImpactRegular;
+    font-size:7em;
+    letter-spacing: 10px;
+    -webkit-text-shadow: 0px 0px 32px #222;
+    -moz-text-shadow: 0px 0px 32px #222;
+    text-shadow: 0px 0px 32px #222;
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    opacity : 0.8; 
+    filter : alpha(opacity=60); 
+	z-index: 99;
+}
+
+div.complet {
+    position:absolute;
+    margin-top:50%;
+    color:#990000;
+    font-family:ImpactRegular;
+    font-size:7em;
+    letter-spacing: 10px;
+    -webkit-text-shadow: 0px 0px 32px #222;
+    -moz-text-shadow: 0px 0px 32px #222;
+    text-shadow: 0px 0px 32px #222;
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    opacity : 0.6; 
+    filter : alpha(opacity=60); 
+
+}
+
+.message_session {
+	display: none;
+}
+
+.quick_message {
+    background-color:yellow;
+    color:black;
+    position:fixed;
+    top:0;
+    margin:auto;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;  
+}
+
+/*div.mission_test {
+	position:absolute;
+	left:900px;
+	margin-top:1%;
+	color:#FF6611;;
+	background-color:#cccccc;
+	font-family:ImpactRegular;
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 10px;
+	-webkit-box-shadow: 0px 0px 32px #222;
+	-moz-box-shadow: 0px 0px 32px #222;
+	box-shadow: 0px 0px 32px #222;
+	-moz-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}*/
+div.mission_test {
+	float: right;
+	font-family:ImpactRegular;
+	color:#990000;
+	padding: 40px 0;
+	/*margin: 21px 0;*/
+	font-size: 1.2em;
+}
+
+.encart_blanc {
+	background:white;
+	text-align:center;
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+.tarifs_liste {
+	background:white;
+	padding-top:1%;
+	padding-bottom:3%;
+	margin-top:1%;
+	margin-bottom:1%;
+	border:dotted 2px grey;
+	border-radius: 20px;
+	/* pour les browsers non-HTML5-compliant */
+    -moz-border-radius: 20px;  
+    -webkit-border-radius: 20px;  
+}
+.tarifs_liste p {
+	text-align:center;
+}
+.tarifs_liste_error {
+	background:white;
+	padding-top:1%;
+	padding-bottom:3%;
+	margin-top:1%;
+	margin-bottom:1%;
+	border:5px red dotted ! important;
+	border-radius: 20px;
+	/* pour les browsers non-HTML5-compliant */
+    -moz-border-radius: 20px;  
+    -webkit-border-radius: 20px;  
+}
+.tarifs_liste_error p {
+	text-align:center;
+}
+
+.facture_date {
+	float: right;
+}
+
+.voile_noir {
+	position:fixed;
+	background-color:black;
+	filter:alpha(opacity=75); /* IE's opacity*/
+	opacity: 0.75;
+	top:0px;
+	left:0px;
+	height:100%;
+	min-height: 100%;
+	width:100%;
+}
+
+.patientez {
+	position:fixed;
+	background-color: white;
+	filter:alpha(opacity=100); /* IE's opacity*/
+	opacity: 1;
+	margin:auto;
+/*	margin-top:5%;*/
+	width:25%;
+	padding:3%;
+	text-align:center;
+	border-radius: 20px;
+	/* pour les browsers non-HTML5-compliant */
+    -moz-border-radius: 20px;  
+    -webkit-border-radius: 20px;  
+/*	z-index:999;*/
+}
+
+.adh_progressbar {
+	background-image:url(../adherent/images/pb_background.png);
+	background-repeat: repeat-x;
+	width:100px;
+	height:24px;
+}
+.adh_progressbar img {
+	vertical-align:middle;
+	height:24px;
+}
+
+.lien_mappemonde {
+	/*clear: right;
+	float: right;*/
+	/*margin-top: 255px;*/
+	/*font-size: 0.8em;
+	font-family:"arial";
+	position: absolute;
+	z-index: 100;
+	top:235px;
+	right: 20px; /* = centrecontent_2columns.padding-right*/
+}
+.lien_mappemonde a:hover {
+	text-decoration: underline;
+}
+
+div.div_quickbox {
+	width: 100%;
+	height:105px;
+	overflow: hidden;
+}
+div.div_quickbox img {
+	height: 100px;
+	margin: 2px;
+}
+
+/* la navbar pour afficher des pages qui contiennent des donn�es �tal�es sur plusieurs pages (blog / actus / etc... */
+.navbar {
+  margin: 15px auto 20px auto;
+  /*font-family: Cambria,"Times New Roman",Times,serif;*/
+  text-align: center;
+  font-size: 0.8em;
+}
+.navbar > span.nb_left {
+	float: left;
+}
+/*.navbar > select:nth-child(even) {*/
+.navbar > span.nb_right {
+	float: right;
+}
+/*.navbar > select {
+	float: left;
+}
+.navbar a > img {
+	float: left;
+	margin: 0 5px;
+	width: 16px;
+	height: 16px;
+}*/
+
+/*
+ * un div cach� par d�faut, que l'on fait apparaitre en cliquant sur une action
+ */
+.div_escamotable {
+	visibility:hidden;
+	height:0px;
+	overflow:hidden;
+	margin: 0px;
+	padding:0px;
+	border:silver dotted 2px;
+	border-radius: 20px;
+	/* pour les browsers non-HTML5-compliant */
+    -moz-border-radius: 20px;  
+    -webkit-border-radius: 20px;
+	display: none;
+}
+
+/*
+  * bloc avec les scotchs des programmes
+  */
+.programmes {
+    overflow: hidden;
+    /*padding-bottom: 30px ! important;*/
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+/*.programmes a {
+	font-family:TrashHand;
+	display:block;
+	width:100%; 
+	text-shadow: #cdd521 0px 0px 1px; /* pour lissage police hors ie 
+	text-decoration:none;
+}*/
+/*.programmes a:hover {
+	color: white;
+	-webkit-transform: rotate(-6deg); 
+	-moz-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
+}*/
+
+/*
+  * gros bloc des programmes sur la page d'accueil
+  */
+#bloc-ecovolontariat{
+	position: relative;
+	margin: -40px 0 30px 0px;
+	text-align: center;
+	color:#bec41e;
+	font-family: TrashHand, "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 2.5em;
+	/*font-weight:bold;*/
+	height: 200px;
+}
+#bloc-ecovolontariat #RA:hover,
+#bloc-ecovolontariat #FR:hover,
+#bloc-ecovolontariat #MD:hover{
+    -webkit-transform: rotate(-2deg); 
+    -moz-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    opacity : 0.8; 
+    filter : alpha(opacity=80); 
+}
+#bloc-ecovolontariat #RA{
+	position: absolute;
+	top: 30px;
+	/*float: left;
+	left:20px;
+	margin-top: 30px;
+	margin-left: 15px;
+	z-index: 100;*/
+}
+#bloc-ecovolontariat #FR{
+	position: absolute;
+	left:320px;
+	top: 40px;
+	/*padding-left: 40%;*/
+}
+#bloc-ecovolontariat #MD{
+	position: absolute;
+	right:50px;
+	top: 50px;
+	/*float: right;
+	margin-top: 40px;
+	margin-right: 30px;
+	z-index: 100;*/
+}
+
+/*
+  * un mini calendrier pour afficher devant les actus
+  */
+.calendrier {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+	/*background: url(../images/items/calendar-empty.png) no-repeat;*/
+	background-color: white;
+	border: 1px thin black;
+	border-radius: 5px;
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px #222;
+	-moz-box-shadow: 0px 0px 5px #222;
+	box-shadow: 0px 0px 5px #222;
+	overflow: hidden;
+}
+.calendrier > div {	/* en t�te du calendrier */
+	background-color: red;
+	text-align: center;
+	color: white;
+	font-size: 0.7em;
+}
+.calendrier > p {
+	text-align: center;
+	color: black;
+	font-size: small;
+	font-weight: bold;
+	/*margin-top: 4px ! important;*/
+}
+
+/*#debug, .div_debug {
+    color: grey;
+    background-color: silver;
+    padding-left: 25px;
+    border-left: dotted black 1px;
+    margin-top: 60px;
+}*/
+
+#consoleLog {
+    font-family: "courier new", courier;
+    overflow: scroll;
+    height: 100px;
+}
+
+/* ------ contact ------ */
+div.contact-name {
+    font-size: 2em;
+}
+div.contact-image {
+    float: left;
+}
+div.contact-image img {
+	max-width: 256px;
+	margin: 0 10px 0 0;
+}
+div.jicons-icons, div.jicons-text {
+    float: left;
+    margin-right: 10px;
+}
+
+/*
+ * ACTUS
+ * 
+ */
+div.mod_actus a.readmore, div.mod_zoomsur a.readmore, div.mod_urgences a.readmore {
+	position: relative;
+	float:right;
+	margin:5px 10px 5px 0;
+	background-image: url("../images/items/fleche_lien.png");
+	background-position: left 0;
+	padding : 0 0 0 30px;
+	background-repeat: no-repeat; 
+	font-weight:bold;
+}
+div.mod_actus a.readmore:hover, div.mod_zoomsur a.readmore:hover, div.mod_urgences a.readmore:hover {
+	/*color: #8b6940;*/
+	text-decoration: none;
+}
+div.mod_actus a.readmore:visited, div.mod_zoomsur a.readmore:visited, div.mod_urgences a.readmore:visited {
+	/*color: #8b6940;*/
+}
+div.mod_actus h3 {
+	background-image: url("../images/bg-bloc-sable.png");
+}
+
+/*
+ *
+ * ZOOM sur
+ *
+ */
+ul.mod_zoomsur, ul.mod_urgences, ul.mod_actus {
+	/*padding-left: 20px;*/
+}
+div.mod_zoomsur, div.mod_urgences, div.mod_actus, div.mod_slideshow {
+	padding: 20px 20px ! important;
+}
+
+/*.mod_zoomsur {
+	background-color: #e7e0d6;
+	margin: 0px 10px 40px 10px;
+	height: 250px;
+	padding :15px;
+	font-size:.8em;
+}*/
+
+div.mod_actus h3, div.mod_zoomsur h3, div.mod_urgences h3 {
+	/*float:right ! important;*/
+	text-align:right ! important;
+	font-family: TrashHand, 'Trebuchet MS', Verdana, Arial, sans-serif ! important;
+	text-shadow: #D1AC81 0px 0px 1px ! important;
+	height: 47px ! important;
+	/*margin: 10px 0 20px 0 ! important;*/
+	padding: 0 10px ! important;
+	background-position: right center ! important;
+	background-repeat: no-repeat ! important;
+}
+div.mod_actus h3, div.mod_zoomsur h3 {
+	color: #8B6940 ! important;
+}
+div.mod_zoomsur h3 {
+	background: url("../images/bg-bloc-zoom.png") no-repeat ! important;
+}
+h4.mod_zoomsur, h5.mod_zoomsur {
+	background: url("../images/empreinte_loup-blanc_sable.png") no-repeat ! important;
+	padding: 0 16px ! important;
+}
+h4.mod_zoomsur a:hover, h5.mod_zoomsur a:hover {
+	text-decoration: none;
+}
+div.mod_actus * a, div.mod_zoomsur * a {
+	color: #8B6940 ! important;
+	text-decoration: none;
+	/*padding: 0 5px;*/
+}
+div.mod_actus * a:hover, div.mod_zoomsur * a:hover {
+	color: #E4620C ! important;
+	text-decoration: none;
+}
+div.mod_actus ul li, div.mod_zoomsur ul li {
+	/*color: #B98D58;*/
+	background: none;
+	list-style-image: url(../images/empreinte_loup-blanc_sable.png);
+	font-weight: bold;
+	font-size:1.1em;
+	margin: 5px 0;
+	padding:0;
+}
+
+/*
+  *
+  * URGENCES
+  *
+  */
+div.mod_urgences {
+	background-color: #e4620c ! important;
+	/*margin: 0px 10px 40px 10px ! important;*/
+	/*height: 250px;*/
+	/*min-height: 230px;
+	max-height: 300px;*/
+	/*font-size:.8em;*/
+}
+
+.mod_urgences img {
+	width: 64px;
+	vertical-align:top;
+	margin-left:-4%;
+	margin-top:-4%;
+}
+
+.mod_urgences h3 {
+	color:white ! important;
+/*	font-family: TrashHand, "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size:2.5em;
+	font-weight:bold;
+	text-transform: uppercase;
+	display:inline-block;
+	float:right;
+	width:320px;
+	height:43px;
+	text-align:right;
+	text-shadow: #FFF 0px 0px 1px;
+	margin: 10px 0 20px 0;*/
+	background-image: url("../images/bg-bloc-orange.png");
+	background-repeat: no-repeat;
+	background-position: right 0;
+}
+
+.mod_urgences ul li {
+	list-style-image: url(../images/empreinte_loup-blanc_orange.png);
+	font-weight: bold;
+	font-size:1.1em;
+	margin: 5px 0;
+	background: none;
+	padding:0;
+}
+.mod_urgences * a {
+	color: white ! important;
+	text-decoration: none;
+	/*padding: 0 5px;*/
+}
+.mod_urgences * a:hover {
+	color: #F7DFC3 ! important;
+	text-decoration: none;
+}
+
+.mod_urgences div.readmore a {
+	color: #FFF;
+	font-weight:bold;
+}
+.mod_urgences div.readmore a:hover {
+	color: #F2E0CB;
+	text-decoration: none;
+}
+.mod_urgences div.readmore a:visited {
+	color: #FFF;
+}

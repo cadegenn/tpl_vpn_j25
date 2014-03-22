@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@font-face { font-family:TrashHand; src:url(../fonts/TrashHand.TTF); }*/
+/* Fonts : voir http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/ */
+@font-face {
+	/* Internet Explorer */
+	font-family: 'TrashHand';
+	src: url('../fonts/trashhand-webfont.eot');
+}
+
+@font-face {
+	/* everything else */
+	font-family: 'TrashHand';
+	src: url(//:) format('no404'), url('../fonts/trashhand-webfont.woff') format('woff'), url('../fonts/trashhand-webfont.ttf') format('truetype'), url('../fonts/trashhand-webfont.svg#webfontUSoVVJZm') format('svg');
+}
+
+a {
+	text-decoration: none;
+}
+a img {
+	border:0;
+	/*vertical-align: middle;*/
+}
+
+.apl {
+	color:#e4620c;
+	font-family: TrashHand, "Trebuchet MS", Verdana, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight:bold;
+}
+
+.partenaires li {
+	list-style-type: none ! important;
+	background-image: none ! important;
+	display: inline;
+	padding-left:5px ! important;
+}
+.partenaires li img {
+	height: 60px;
+}
+
+#en_tete {
+}
+
+#logo {
+	float:left;
+}
+#logo img {
+	border:none;
+	width: 212px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+#titre {
+	display: none;
+	padding-top:25px;
+	float:left;
+}
+
+#page_content {
+	clear:both;
+}
+
+#pied_de_page {
+/*	position:absolute;*/
+	bottom:2%;
+	width:100%;
+}
+
+#pied_de_page p {
+/*	margin-top:5%;*/
+	font-style: italic;
+	font-size: 0.8em;
+	text-align: center;
+	color: grey;
+}

@@ -1,0 +1,29 @@
+/* 
+    Document   : googlemap-v3
+    Created on : 16 sept. 2012, 21:35:40
+    Author     : charly
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+ * Les mini-cartes
+ */
+.map_thumb {
+	float: right;
+	margin: 0% 0 2% 4% ! important;
+	width: 175px;
+	height: 150px ! important;
+}
+
+/*
+ * les grandes google maps
+ */
+#map_canvas {
+	height: 500px;
+	/*width:635px;*/
+	/*width: 100%;*/
+	/*margin: 50px 90px 0 0; /* pour loger les thumbnails vertical */
+	box-shadow: 1px 1px 4px 2px rgba(0,0,0 ,0.7);
+}
+#map_canvas div        { line-height: normal ! important; }

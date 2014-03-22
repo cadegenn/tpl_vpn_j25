@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+    <name>raph_2010</name>
+    <creationDate>12/04/12</creationDate>
+    <author>charly</author>
+    <authorEmail>cadegenn@gmail.com</authorEmail>
+    <authorUrl>http://www.apasdeloup.org</authorUrl>
+    <copyright>Copyright (C) 2012 A Pas de Loup</copyright>
+    <license>GPL</license>
+    <version>1.6.5</version>
+    <description>Default APL template webdesigned by Raphael Chassigneux</description>
+    <files>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>params.ini</filename>
+        <folder>images</folder>
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>js</folder>
+    </files>
+    <positions>
+        <position>breadcrumbs</position>
+		<position>permalink</position>
+        <position>left</position>
+        <position>right</position>
+        <position>top</position>
+        <position>footer</position>
+        <position>syndicate</position>
+        <position>debug</position>
+        <position>user1</position>
+        <position>user2</position>
+        <position>user3</position>
+        <position>user4</position>
+        <position>user5</position>
+        <position>user6</position>
+    </positions>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="favicon" type="media" label="Favicon" description="Choisissez l'icône de votre site." />
+                <field name="logoImage" type="media" label="Logo" description="Choisissez un logo dans la banque d'images." />
+                <field name="logoText" type="text" default="A Pas de Loup" size="50" label="Texte du logo" description="Si vous n'avez pas de logo, écrivez votre titre ici." />
+                <field name="sloganText" type="text" default="Des volontaires pour la nature" size="50" label="Slogan" description="Si vous avez un sous_titre ou un slogan, écrivez-le là." />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

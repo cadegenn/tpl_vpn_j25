@@ -1,0 +1,30 @@
+/* 
+    Document   : img
+    Created on : 10 oct. 2012, 18:45:57
+    Author     : charly
+    Description:
+        Purpose of the stylesheet follows.
+*/
+img {
+	vertical-align: middle;
+}
+img.photo_chantier_left, img.photo_chantier_right {
+	max-width: 44%;
+	-webkit-box-shadow: 0px 0px 32px #222;
+	-moz-box-shadow: 0px 0px 32px #222;
+	box-shadow: 0px 0px 32px #222;
+}
+
+img.photo_chantier_left {
+	float: left;
+	margin: 10px 20px 10px 0px;
+}
+
+img.photo_chantier_right {
+	float: right;
+	margin: 0 0px 10px 20px;
+}
+
+.partenaires li img {
+	height: 60px;
+}

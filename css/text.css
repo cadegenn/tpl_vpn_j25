@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Convertisseur de font
+http://www.fontsquirrel.com/fontface/generator */
+@font-face { font-family:mcgannahan; src:url(../fonts/mcgarg__.ttf); }
+
+/*@font-face { font-family:TrashHand; src:url(../fonts/TrashHand.TTF); }*/
+/* Fonts : voir http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/ */
+@font-face {
+	/* Internet Explorer */
+	font-family: 'TrashHand';
+	src: url('../fonts/trashhand-webfont.eot');
+}
+
+@font-face {
+	/* everything else */
+	font-family: 'TrashHand';
+	src: url(//:) format('no404'), url('../fonts/trashhand-webfont.woff') format('woff'), url('../fonts/trashhand-webfont.ttf') format('truetype'), url('../fonts/trashhand-webfont.svg#webfontUSoVVJZm') format('svg');
+}
+
+@font-face {
+    font-family: 'MarkerFeltNormal';
+    src: url('../fonts/markerfeltnormal-webfont.eot');
+    src: url('../fonts/markerfeltnormal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/markerfeltnormal-webfont.woff') format('woff'),
+         url('../fonts/markerfeltnormal-webfont.ttf') format('truetype'),
+         url('../fonts/markerfeltnormal-webfont.svg#MarkerFeltNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* sauf avis contraire, c'est en Arial par d�faut */
+*{
+	font-size:1em;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+/*#centrecontent_1columns h1,
+#centrecontent_2columns h1,
+#centrecontent_3columns h1 */
+h1 {
+	font-family: TrashHand, "Trebuchet MS", Verdana, Arial, sans-serif;
+	/*font-size:2em;*/
+	font-size: 32px;
+	font-weight: normal;
+	color: #B98D58;
+	text-shadow: #FFF 0px 0px 5px;
+	background: url(../images/bg-h1.png) no-repeat 0 3px;
+	padding: 25px;
+	margin:0 0 20px 0;
+	min-height: 50px;
+}
+h1 a {
+	font-family: TrashHand, "Trebuchet MS", Verdana, Arial, sans-serif;
+	/*font-size:2em;*/
+	font-weight: normal;
+	color: #B98D58;
+	text-shadow: #FFF 0px 0px 5px;
+}
+h1.en_arial {
+	font-family: "Trebuchet MS", sans-serif ! important;
+	padding: 30px ! important;
+	font-size: 1.6em ! important;
+}
+h1 > em {
+	display: block;
+	font-size: 16px;
+}
+
+/*h1.detail_chantier {
+	background-color:#99cc00;
+	padding:5px;
+	font-family:mcgannahan;
+	font-size:1.5em;
+	color:#ffff66;
+}*/
+
+h2, h2 a {
+	font-family: MarkerFeltNormal, Arial, sans-serif;
+	color: #cccc33;
+	font-size: 30px;
+	font-weight: normal;
+	margin: 25px 0 0 0;
+}
+h1 a:hover, h2 a:hover {
+	text-decoration: none;
+}
+
+h3 {
+	/*display:inline;*/
+	font-family:MarkerFeltNormal, Arial, sans-serif;
+	color: orange;
+	font-weight: normal;
+	margin: 20px 0 5px 0;
+	font-size: 20px;
+}
+
+h4 {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: #E4620C;
+	/*color: navy;*/
+}
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-size: 0.9em;*/
+	word-spacing: 1px;
+	line-height: 1.3em;
+	text-align: justify;
+}
+
+pre {
+	font-family:"Courier New", Courier, monospace;
+	/*font-size: 0.8em;*/
+}
+
+/* ===================== les listes <ul> =====================================*/
+ul {
+    font-family: Arial;
+    /*font-size: 0.9em;*/
+    /*list-style-image: url('../images/ico_16x16/bullets_black_2.png');*/
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul li {
+    background-image: url('../images/ico_16x16/bullets_black_2.png');
+    background-repeat: no-repeat;
+    background-position: 0px 5px; 
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.userdata ul li {
+    background-image: none;
+    padding: 0;
+    font-size: 10px;
+}
+
+ul.action {
+    
+}
+
+/* ======================== les label <label> ================================*/
+.detail_chantier span {
+	font-family:mcgannahan;
+	font-size:large;
+	font-weight:bolder;
+	color:#55aa00;
+}
+
+.finished {
+	color: navy;
+}
+.complet {
+	color:#990000;
+}
+
+.test {
+	color:orange;
+}
+
+.warning {
+	color:orange;
+	font-weight:bold;
+}
+
+.error {
+	color:red ! important;
+	font-weight:bold;
+}
+.success {
+    color: green ! important;
+}
+
+#lien_facebook{
+	text-shadow: #f4f1ec 0px 0px 5px;
+	background: url(../images/items/lien_facebook.png) no-repeat 0 3px;
+	color:#3b5998;
+	padding: 7px 0 0 50px;
+	margin: 30px 0 0 60px;
+	height: 45px;
+	/*font-size: 0.7em;*/
+}
+#lien_facebook a{
+	color:#3b5998;
+}
+
+/*
+ * le lien vers la mappemonde
+ */
+ ul.mappemonde li {
+	 background-image: none;
+	 padding: 0;
+ }

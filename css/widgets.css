@@ -1,0 +1,51 @@
+/* 
+    Document   : widgets.css
+    Created on : 3 oct. 2012, 19:01:00
+    Author     : charly
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ul.menu li {
+    background-image: none ! important;
+	display: inline-block;
+    padding-left: 15px ! important;
+}
+ul.menu li:hover {
+	transform:rotate(-2deg);
+	-webkit-transform: rotate(-2deg); 
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+    opacity : 0.8; 
+    filter : alpha(opacity=80);
+}
+
+/*a.div_W_Rhone-Alpes {
+}
+a.div_W_Rhone-Alpes img {
+	width: 200px;
+    margin: 0 0 20px 0;
+}
+a.div_W_France {
+	text-align: left;
+	float:left;
+	clear: right;
+}
+a.div_W_France img {
+	width: 110px;
+}
+a.div_W_Monde {
+	float:right;
+}
+a.div_W_Rhone-Alpes:hover, .div_W_France:hover, .div_W_Monde:hover {
+	-webkit-transform: rotate(-2deg); 
+	-moz-transform: rotate(-2deg);
+    opacity : 0.8; 
+    filter : alpha(opacity=80); 
+}
+a.div_W_Monde img {
+	width: 75px;
+}
+
+*/
