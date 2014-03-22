@@ -6,7 +6,8 @@
     <author>DEGENNES Charles-Antoine</author>
     <authorEmail>cadegenn@gmail.com</authorEmail>
     <authorUrl>http://www.volontairesnature.org</authorUrl>
-    <copyright>Copyright (C) 2012-2014 DEGENNES Charles-Antoinep</copyright>
+    <copyright>Copyright (C) 2012-2014 DEGENNES Charles-Antoine</copyright>
+    <copyright>Copyright (C) 2010 Raphael Chassigneux</copyright>
     <license>AGPL</license>
     <version>2.0.0</version>
     <description>Default VPN template webdesigned by Raphael Chassigneux</description>
@@ -40,8 +41,8 @@
             <fieldset name="basic">
                 <field name="favicon" type="media" label="Favicon" description="Choisissez l'icône de votre site." />
                 <field name="logoImage" type="media" label="Logo" description="Choisissez un logo dans la banque d'images." />
-                <field name="logoText" type="text" default="A Pas de Loup" size="50" label="Texte du logo" description="Si vous n'avez pas de logo, écrivez votre titre ici." />
-                <field name="sloganText" type="text" default="Des volontaires pour la nature" size="50" label="Slogan" description="Si vous avez un sous_titre ou un slogan, écrivez-le là." />
+                <field name="logoText" type="text" default="Volontaires Pour la Nature" size="50" label="Texte du logo" description="Si vous n'avez pas de logo, écrivez votre titre ici." />
+                <field name="sloganText" type="text" default="" size="50" label="Slogan" description="Si vous avez un sous_titre ou un slogan, écrivez-le là." />
             </fieldset>
         </fields>
     </config>
