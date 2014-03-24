@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="2.5" type="template" client="site">
-    <name>tpl_vpn_j25</name>
+    <name>VPN</name>
     <creationDate>12/04/12</creationDate>
     <author>DEGENNES Charles-Antoine</author>
     <authorEmail>cadegenn@gmail.com</authorEmail>
@@ -39,8 +39,8 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-                <field name="favicon" type="media" label="Favicon" description="Choisissez l'icône de votre site." />
-                <field name="logoImage" type="media" label="Logo" description="Choisissez un logo dans la banque d'images." />
+                <field name="favicon" type="media" default="templates/vpn/images/logo/apl.ico" label="Favicon" description="Choisissez l'icône de votre site." />
+                <field name="logoImage" type="media" default="templates/vpn/images/logo/Logo-VPN.png" label="Logo" description="Choisissez un logo dans la banque d'images." />
                 <field name="logoText" type="text" default="Volontaires Pour la Nature" size="50" label="Texte du logo" description="Si vous n'avez pas de logo, écrivez votre titre ici." />
                 <field name="sloganText" type="text" default="" size="50" label="Slogan" description="Si vous avez un sous_titre ou un slogan, écrivez-le là." />
             </fieldset>
