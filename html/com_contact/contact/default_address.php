@@ -44,7 +44,7 @@ defined('_JEXEC') or die;
 	<?php endif; ?>
 	<?php if ($this->contact->country && $this->params->get('show_country')) : ?>
 		<span class="contact-country">
-			<?php echo $this->contact->country; ?>
+			<?php echo(" - ".$this->contact->country); ?>
 		</span>
 	<?php endif; ?>
 <?php endif; ?>

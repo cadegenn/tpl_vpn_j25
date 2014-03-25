@@ -12,7 +12,6 @@ $app = JFactory::getApplication();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
 <head>
 <jdoc:include type="head" />
-<?php $rootDir = $this->baseurl; ?>
 <LINK REL="SHORTCUT ICON" HREF="<?php echo $this->params->get('favicon') ?>" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
@@ -31,7 +30,7 @@ $app = JFactory::getApplication();
     <div id="header">
         <div id="logo">
             <?php if ($this->params->get('logoImage') != '') : ?>
-                <a href="<?php echo $this->baseurl ?>"><img src="<?php echo $this->params->get('logoImage') ?>" alt="logo" /></a>
+                <a href="<?php echo JURI::base() ?>"><img src="<?php echo $this->params->get('logoImage') ?>" alt="logo" /></a>
             <?php endif; ?>
         </div>
         <div id="top">
