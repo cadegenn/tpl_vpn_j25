@@ -2,7 +2,10 @@
 @TODO	change all font-size from px to em
 @TODO	use bootstrap
 
-@version 2.0.0 - @date
+@version 2.0.0 - @date 2014.05.20
 	. 1st version from tpl_raph_2010 (@version 1.6.5)
 	. some minor fixes
 	. add license header to all css files
+	. css: réduction de la taille du h1.en_arial
+	. css: réduction de la taille du [TERMINÉ]
+	. css: réduction de la taille du texte dans les modules zoom_sur, actus et urgences
