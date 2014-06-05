@@ -19,6 +19,7 @@
         <folder>css</folder>
         <folder>fonts</folder>
         <folder>js</folder>
+		<folder>language</folder>
     </files>
     <positions>
         <position>breadcrumbs</position>
@@ -36,6 +37,12 @@
         <position>user5</position>
         <position>user6</position>
     </positions>
+	
+	<languages folder="language">
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_vpn.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_vpn.sys.ini</language>
+	</languages>
+	
     <config>
         <fields name="params">
             <fieldset name="basic">
@@ -44,6 +51,15 @@
                 <field name="logoText" type="text" default="Volontaires Pour la Nature" size="50" label="Texte du logo" description="Si vous n'avez pas de logo, écrivez votre titre ici." />
                 <field name="sloganText" type="text" default="" size="50" label="Slogan" description="Si vous avez un sous_titre ou un slogan, écrivez-le là." />
             </fieldset>
+			
+			<fieldset name="analytics" label="TPL_VPN_SETTINGS_ANALYTICS">
+				<field name="google-analytics" type="radio" default="0" label="TPL_VPN_SETTINGS_GA_ENABLE_GOOGLEANALYTICS_LABEL" description="TPL_VPN_SETTINGS_GA_ENABLE_GOOGLEANALYTICS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="ga-userid" type="text" default="" size="50" label="TPL_VPN_SETTINGS_GA_USERID_LABEL" description="TPL_VPN_SETTINGS_GA_USERID_DESC" />
+				<field name="ga-site" type="text" default="" size="50" label="TPL_VPN_SETTINGS_GA_SITE_LABEL" description="TPL_VPN_SETTINGS_GA_SITE_DESC" />
+			</fieldset>
         </fields>
     </config>
 </extension>
