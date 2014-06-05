@@ -155,53 +155,51 @@ div.right_chantier_preview img {
 }
 .thumb_chantiers li { display:inline; }
 
-div.finished {
-    position:absolute;
-    margin-top:25%;
-    color:#990000;
-    font-family:ImpactRegular;
-    font-size: 7em;
-/*	font-size: 128px;*/
-    letter-spacing: 10px;
-    -webkit-text-shadow: 0px 0px 32px #222;
-    -moz-text-shadow: 0px 0px 32px #222;
-    text-shadow: 0px 0px 32px #222;
-    -moz-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    -webkit-transform: rotate(-20deg);
-    opacity : 0.6; 
-    filter : alpha(opacity=60); 
+/**
+ * les tags de chantiers
+ */
+.tag_big() {
+	position:absolute;
+	color:#990000;
+	font-family:ImpactRegular;
+	font-size: 6.5em;
+	letter-spacing: 10px;
+	-webkit-text-shadow: 0px 0px 32px #222;
+	-moz-text-shadow: 0px 0px 32px #222;
+	text-shadow: 0px 0px 32px #222;
+	-moz-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	opacity : 0.6; 
+	filter : alpha(opacity=60); 
 	z-index: 99;
 }
-
-div.complet {
-    position:absolute;
-    margin-top:50%;
-    color:#990000;
-    font-family:ImpactRegular;
-    font-size: 8em;
-/*	font-size: 128px;*/
-    letter-spacing: 10px;
-    -webkit-text-shadow: 0px 0px 32px #222;
-    -moz-text-shadow: 0px 0px 32px #222;
-    text-shadow: 0px 0px 32px #222;
-    -moz-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    -webkit-transform: rotate(-20deg);
-    opacity : 0.6; 
-    filter : alpha(opacity=60); 
-
-}
-
-div.mission_test {
+.tag_small() {
 	float: right;
 	font-family:ImpactRegular;
 	color:#990000;
-	padding: 40px 0;
-	/*margin: 21px 0;*/
-/*	font-size: 1.2em;*/
+	margin: 0px 4px;
+	/*	font-size: 1.2em;*/
 	font-size: 18px;
 }
+div.tag_finished {
+    margin-top:25%;
+	.tag_big();
+}
+
+div.tag_complet {
+    margin-top:50%;
+	.tag_big();
+}
+
+div.tag_test {
+	padding: 14px 0 0 0;
+	.tag_small();
+}
+div.tag_vpn {
+	.tag_small();
+}
+/* END TAGS */
 
 .encart_blanc {
 	background:white;
