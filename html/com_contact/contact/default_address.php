@@ -18,7 +18,7 @@ defined('_JEXEC') or die;
 	<?php if ($this->params->get('address_check') > 0) : ?>
 		<div class="<?php echo $this->params->get('marker_class'); ?>" >
 			<!--<?php echo $this->params->get('marker_address'); ?>-->
-                        <img src="<?php echo JURI::base(); ?>/images/apl/ico_16x16/mail.png" alt="<?php echo JText::_('COM_CONTACT_ADDRESS'); ?>" />
+                        <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/apl/ico_16x16/mail.png" alt="<?php echo JText::_('COM_CONTACT_ADDRESS'); ?>" />
 		</div>
 		<address>
 	<?php endif; ?>
@@ -61,7 +61,7 @@ defined('_JEXEC') or die;
             <div class="contact-emailto">
 		<div class="<?php echo $this->params->get('marker_class'); ?>" >
                     <!--<?php echo $this->params->get('marker_email'); ?>-->
-                    <img src="<?php echo JURI::base(); ?>/images/apl/ico_16x16/email.png" alt="<?php echo JText::_('COM_CONTACT_EMAIL_LABEL'); ?>" />
+                    <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/apl/ico_16x16/email.png" alt="<?php echo JText::_('COM_CONTACT_EMAIL_LABEL'); ?>" />
 		</div>
                 <email>
                     <?php echo $this->contact->email_to; ?>
@@ -73,7 +73,7 @@ defined('_JEXEC') or die;
             <div class="contact-telephone">
 		<div class="<?php echo $this->params->get('marker_class'); ?>" >
                     <!--<?php echo $this->params->get('marker_telephone'); ?>-->
-                    <img src="<?php echo JURI::base(); ?>/images/apl/ico_16x16/telephone.png" alt="<?php echo JText::_('COM_CONTACT_TELEPHONE'); ?>" />
+                    <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/apl/ico_16x16/telephone.png" alt="<?php echo JText::_('COM_CONTACT_TELEPHONE'); ?>" />
 		</div>
                 <div class='telephone'>
 			<?php echo nl2br($this->contact->telephone); ?>
@@ -83,7 +83,7 @@ defined('_JEXEC') or die;
 <?php if ($this->contact->fax && $this->params->get('show_fax')) : ?>
 		<div class="<?php echo $this->params->get('marker_class'); ?>" >
                     <!--<?php echo $this->params->get('marker_fax'); ?>-->
-                    <img src="<?php echo JURI::base(); ?>/images/apl/ico_16x16/printer.png" alt="<?php echo JText::_('COM_CONTACT_FAX'); ?>" />
+                    <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/apl/ico_16x16/printer.png" alt="<?php echo JText::_('COM_CONTACT_FAX'); ?>" />
 		</div>
 		<div class="contact-fax">
 		<?php echo nl2br($this->contact->fax); ?>
@@ -93,7 +93,7 @@ defined('_JEXEC') or die;
             <div class="contact-mobile">
 		<div class="<?php echo $this->params->get('marker_class'); ?>" >
                     <!--<?php echo $this->params->get('marker_mobile'); ?>-->
-                    <img src="<?php echo JURI::base(); ?>/images/apl/ico_16x16/telephone.png" alt="<?php echo JText::_('COM_CONTACT_MOBILE'); ?>" />
+                    <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/apl/ico_16x16/telephone.png" alt="<?php echo JText::_('COM_CONTACT_MOBILE'); ?>" />
 		</div>
                 <div class='telephone'>
                     <?php echo nl2br($this->contact->mobile); ?>
