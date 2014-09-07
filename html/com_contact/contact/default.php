@@ -116,3 +116,9 @@ $cparams = JComponentHelper::getParams ('com_media');
 	<?php if ($this->params->get('presentation_style')!='plain'){?>
 			<?php echo JHtml::_($this->params->get('presentation_style').'.end');} ?>
 </div>
+
+<?php if (JDEBUG) : ?>
+<pre>
+	<?php //var_dump($this); ?>
+</pre>
+<?php endif; ?>

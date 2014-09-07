@@ -1,0 +1,114 @@
+/**
+ * @package		Volontaires Pour la Nature <http://www.apasdeloup.org>
+ * @subpackage	tpl_vpn_j25
+ * @brief		Joomla! 2.5 template for the site <http://www.apasdeloup.org>
+ * @copyright	Copyright (C) 2010 - 2014 DEGENNES Charles-Antoine <cadegenn@gmail.com>
+ * @license		Affero GNU General Public License version 3 or later; see LICENSE.txt
+ * 
+ * @TODO		use less to compile css instead of directly editing css files
+ */
+
+/** 
+ *  Copyright (C) 2012-2014 DEGENNES Charles-Antoine <cadegenn@gmail.com>
+ *  com_apl is a joomla! 2.5 component [http://www.apasdeloup.org]
+ *  
+ *  This file is part of com_apl.
+ * 
+ *     com_apl is free software: you can redistribute it and/or modify
+ *     it under the terms of the Affero GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ * 
+ *     com_apl is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     Affero GNU General Public License for more details.
+ * 
+ *     You should have received a copy of the Affero GNU General Public License
+ *     along with com_apl.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ */
+
+@charset "utf-8";
+/* CSS Document */
+
+/*
+ * Boutons
+ */
+.btn_left {
+	float:left;
+}
+
+.btn_right {
+	float:right;
+	margin: 50px 0 0 0 ! important;
+}
+
+.btn_localiser {
+    clear: right;
+	float: right;
+}
+.arrow_up {
+	float:right;
+	height:12px;
+	/*background: no-repeat url(../images/fleche_haut_noir.png);*/
+}
+
+.arrow_down {
+	float:right;
+	clear:right;
+	height:12px;
+	margin-top:-14px;
+}
+
+input[type=submit], input[type=button], button {
+    padding: 4px 8px;
+    margin: 8px 0;
+    background-color: #cdd520;
+    color: #000;
+    text-shadow: #FFF 1px 1px 1px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(js/border-radius.htc); /* pour ie */
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+	cursor:pointer;
+/*	font-size: 0.8em;*/
+	font-size: 14px;
+}
+input[type=submit]:hover, input[type=button]:hover, button:hover {
+    background-color: #E5DED5;
+}
+.userdata input[type=submit], .userdata input[type=button], .userdata button {
+    float: right;
+}
+.userdata input[type=text], .userdata input[type=password] {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(js/border-radius.htc); /* pour ie */
+    padding: 2px 10px 2px 10px;
+    margin: 2px 0px 2px 0px;
+    width:183px;
+    height: 20px;
+    border:1px solid #F4F2EF;
+    background-color:#F4F2EF;
+/*    font-size: .7em;*/
+	font-size: 10px;
+    color: #8b6940;
+}
+
+input[readonly="readonly"], input[readonly], input[type="text"]:read-only {
+	background-color: darkgrey;
+}

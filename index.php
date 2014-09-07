@@ -105,8 +105,10 @@ $app = JFactory::getApplication();
             <jdoc:include type="modules" name="syndicate" />
         </div>
     </div>
-    <div id="debug">
-        <jdoc:include type="modules" name="debug" />
-    </div>
+	<?php if (JDEBUG) : ?>
+		<div id="debug">
+			<jdoc:include type="modules" name="debug" />
+		</div>
+	<?php endif; ?>
 </body>
 </html>

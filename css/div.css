@@ -458,34 +458,6 @@ div.div_quickbox img {
   overflow: scroll;
   height: 100px;
 }
-/* ------ contact ------ */
-div.contact-name {
-  font-size: 2em;
-}
-div.contact-image {
-  float: left;
-  max-width: 40%;
-  /* 40% of main content */
-}
-div.contact-image img {
-  /*	max-width: 256px;*/
-  max-width: 100%;
-  /* 100% of div.contact-image to be sure it will shrink to div.contact-image's width */
-  margin: 0 10px 0 0;
-}
-div.contact-wrapper {
-  margin-left: 45%;
-  /* div.contact-image: max-width + 5% */
-}
-div.contact-address address {
-  max-width: 90%;
-  /* to be sure it will wrap instead of displaying long address below icon */
-}
-div.jicons-icons,
-div.jicons-text {
-  float: left;
-  margin-right: 10px;
-}
 /*
  * ACTUS
  * 
@@ -656,4 +628,69 @@ div.mod_urgences {
 }
 .mod_urgences div.readmore a:visited {
   color: #FFF;
+}
+ul.action_tag {
+  float: right;
+  margin: 0px;
+  max-width: 33%;
+}
+ul.action_tag li {
+  display: inline-block;
+  background-image: none;
+  background-position: 0px 0px;
+  padding: 0;
+  height: 16px;
+  width: 16px;
+}
+ul.action_tag li.action_tag_complet {
+  color: #990000;
+}
+ul.action_tag li.action_tag_test {
+  color: orange;
+}
+/**
+ * CONTACT
+ *
+ */
+div.contact-image {
+  float: left;
+  max-width: 40%;
+  /* 40% of main content */
+}
+div.contact-image img {
+  /*	max-width: 256px;*/
+  max-width: 100%;
+  /* 100% of div.contact-image to be sure it will shrink to div.contact-image's width */
+  margin: 0 10px 0 0;
+}
+div.contact-wrapper {
+  margin-left: 45%;
+  /* div.contact-image: max-width + 5% */
+}
+div.contact-name {
+  font-size: 2em;
+}
+/* not needed anymore
+div.jicons-icons, div.jicons-text {
+    float: left;
+    margin-right: 10px;
+}*/
+.contact-address address {
+  max-width: 90%;
+  /* to be sure it will wrap instead of displaying long address below icon */
+  background: url(../images/ico_16x16/mail.png) no-repeat;
+  padding-left: 20px;
+}
+.contact-emailto email {
+  background: url(../images/ico_16x16/email.png) no-repeat;
+  padding-left: 20px;
+}
+.contact-telephone,
+.contact-mobile {
+  background: url(../images/ico_16x16/telephone.png) no-repeat;
+  padding-left: 20px;
+}
+.contact-webpage {
+  background: url(../images/ico_16x16/world-go.png) no-repeat;
+  padding-left: 20px;
 }

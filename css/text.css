@@ -143,7 +143,7 @@ a:hover {
 p {
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
-	/*font-size: 0.9em;*/
+	font-size: 14px;
 	word-spacing: 1px;
 	line-height: 1.3em;
 	text-align: justify;
@@ -157,7 +157,7 @@ pre {
 /* ===================== les listes <ul> =====================================*/
 ul {
     font-family: Arial;
-    /*font-size: 0.9em;*/
+    font-size: 14px;
     /*list-style-image: url('../images/ico_16x16/bullets_black_2.png');*/
     list-style-type: none;
     padding: 0px;
