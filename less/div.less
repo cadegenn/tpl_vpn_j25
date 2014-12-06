@@ -456,166 +456,145 @@ div.div_quickbox img {
 }
 
 /*
+ * MODULES
+ */
+.user_module() {
+	padding: 20px 20px ! important;
+	a.readmore {
+		position: relative;
+		float:right;
+		margin:5px 10px 5px 0;
+		background-image: url("../images/items/fleche_lien.png");
+		background-position: left 0;
+		padding : 0 0 0 30px;
+		background-repeat: no-repeat; 
+		font-weight:bold;
+		&:hover {
+			text-decoration: none;
+		}
+		&:visited {
+			/*color: #8b6940;*/
+		}
+	}
+	h3 {
+		/*float:right ! important;*/
+		text-align:right ! important;
+		font-family: TrashHand, 'Trebuchet MS', Verdana, Arial, sans-serif ! important;
+		text-shadow: #D1AC81 0px 0px 1px ! important;
+		height: 47px ! important;
+		/*margin: 10px 0 20px 0 ! important;*/
+		padding: 0 10px ! important;
+		background-position: right center ! important;
+		background-repeat: no-repeat ! important;
+	}
+	ul li {
+		list-style-image: url(../images/empreinte_loup-blanc_sable.png);
+		font-weight: bold;
+		/*font-size:0.9em;*/
+		margin: 5px 0;
+		background: none;
+		padding:0;
+	}
+	* a {
+		color: #8B6940 ! important;
+		&:hover {
+			color: #E4620C ! important;
+		}
+	}
+}
+
+/*
  * ACTUS
  * 
  */
-div.mod_actus a.readmore, div.mod_zoomsur a.readmore, div.mod_urgences a.readmore {
-	position: relative;
-	float:right;
-	margin:5px 10px 5px 0;
-	background-image: url("../images/items/fleche_lien.png");
-	background-position: left 0;
-	padding : 0 0 0 30px;
-	background-repeat: no-repeat; 
-	font-weight:bold;
+div.mod_actus {
+	.user_module();
+	h3 {
+		background-image: url("../images/bg-bloc-sable.png");
+		color: #8B6940 ! important;
+	}
 }
-div.mod_actus a.readmore:hover, div.mod_zoomsur a.readmore:hover, div.mod_urgences a.readmore:hover {
-	/*color: #8b6940;*/
-	text-decoration: none;
+
+/**
+  *
+  * URGENCES
+  *
+  */
+div.mod_urgences {
+	.user_module();
+	background-color: #e4620c ! important;
+	img {
+		width: 64px;
+		vertical-align:top;
+		margin-left:-4%;
+		margin-top:-4%;
+	}
+	h3 {
+		color:white ! important;
+		background-image: url("../images/bg-bloc-orange.png");
+		background-repeat: no-repeat;
+		background-position: right 0;
+	}
+	div.readmore a {
+		color: #FFF;
+		font-weight:bold;
+		&:hover {
+			color: #F2E0CB;
+			text-decoration: none;
+		}
+		&:visited {
+			color: #FFF;
+		}
+	}
+	ul li {
+		list-style-image: url(../images/empreinte_loup-blanc_orange.png);
+	}
+	* a {
+		color: white ! important;
+		&:hover {
+			color: #F7DFC3 ! important;
+		}
+	}
 }
-div.mod_actus a.readmore:visited, div.mod_zoomsur a.readmore:visited, div.mod_urgences a.readmore:visited {
-	/*color: #8b6940;*/
-}
-div.mod_actus h3 {
-	background-image: url("../images/bg-bloc-sable.png");
-}
+
 
 /*
  *
  * ZOOM sur
  *
  */
-ul.mod_zoomsur, ul.mod_urgences, ul.mod_actus {
-	/*padding-left: 20px;*/
-}
-div.mod_zoomsur, div.mod_urgences, div.mod_actus, div.mod_slideshow {
-	padding: 20px 20px ! important;
-}
-
-/*.mod_zoomsur {
-	background-color: #e7e0d6;
-	margin: 0px 10px 40px 10px;
-	height: 250px;
-	padding :15px;
-	font-size:.8em;
-}*/
-
-div.mod_actus h3, div.mod_zoomsur h3, div.mod_urgences h3 {
-	/*float:right ! important;*/
-	text-align:right ! important;
-	font-family: TrashHand, 'Trebuchet MS', Verdana, Arial, sans-serif ! important;
-	text-shadow: #D1AC81 0px 0px 1px ! important;
-	height: 47px ! important;
-	/*margin: 10px 0 20px 0 ! important;*/
-	padding: 0 10px ! important;
-	background-position: right center ! important;
-	background-repeat: no-repeat ! important;
-}
-div.mod_actus h3, div.mod_zoomsur h3 {
-	color: #8B6940 ! important;
-}
-div.mod_zoomsur h3 {
-	background: url("../images/bg-bloc-zoom.png") no-repeat ! important;
-}
-div.mod_zoomsur p {
-	font-size: 0.9em;
-}
-h4.mod_zoomsur, h5.mod_zoomsur {
-	background: url("../images/empreinte_loup-blanc_sable.png") no-repeat ! important;
-	padding: 0 16px ! important;
-	font-size:0.9em;
-}
-h4.mod_zoomsur a:hover, h5.mod_zoomsur a:hover {
-	text-decoration: none;
-}
-div.mod_actus * a, div.mod_zoomsur * a {
-	color: #8B6940 ! important;
-	text-decoration: none;
-	/*padding: 0 5px;*/
-}
-div.mod_actus * a:hover, div.mod_zoomsur * a:hover {
-	color: #E4620C ! important;
-	text-decoration: none;
-}
-div.mod_actus ul li, div.mod_zoomsur ul li {
-	/*color: #B98D58;*/
-	background: none;
-	list-style-image: url(../images/empreinte_loup-blanc_sable.png);
-	font-weight: bold;
-	font-size:0.9em;
-	margin: 5px 0;
-	padding:0;
+div.mod_zoomsur {
+	.user_module();
+	h3 {
+		background: url("../images/bg-bloc-zoom.png") no-repeat ! important;
+		color: #8B6940 ! important;
+	}
+	h4, h5 {
+		background: url("../images/empreinte_loup-blanc_sable.png") no-repeat ! important;
+		padding: 0 16px ! important;
+		font-size:0.9em;
+		:hover {
+			text-decoration: none;
+		}
+	}
+	p {
+		font-size: 0.9em;
+	}
 }
 
 /*
-  *
-  * URGENCES
-  *
-  */
-div.mod_urgences {
-	background-color: #e4620c ! important;
-	/*margin: 0px 10px 40px 10px ! important;*/
-	/*height: 250px;*/
-	/*min-height: 230px;
-	max-height: 300px;*/
-	/*font-size:.8em;*/
+ *
+ * FAQ
+ *
+ */
+div.mod_faq {
+	.user_module();
+	margin: 20px 0 0 20px;
 }
 
-.mod_urgences img {
-	width: 64px;
-	vertical-align:top;
-	margin-left:-4%;
-	margin-top:-4%;
-}
-
-.mod_urgences h3 {
-	color:white ! important;
-/*	font-family: TrashHand, "Trebuchet MS", Verdana, Arial, sans-serif;
-	font-size:2.5em;
-	font-weight:bold;
-	text-transform: uppercase;
-	display:inline-block;
-	float:right;
-	width:320px;
-	height:43px;
-	text-align:right;
-	text-shadow: #FFF 0px 0px 1px;
-	margin: 10px 0 20px 0;*/
-	background-image: url("../images/bg-bloc-orange.png");
-	background-repeat: no-repeat;
-	background-position: right 0;
-}
-
-.mod_urgences ul li {
-	list-style-image: url(../images/empreinte_loup-blanc_orange.png);
-	font-weight: bold;
-	font-size:0.9em;
-	margin: 5px 0;
-	background: none;
-	padding:0;
-}
-.mod_urgences * a {
-	color: white ! important;
-	text-decoration: none;
-	/*padding: 0 5px;*/
-}
-.mod_urgences * a:hover {
-	color: #F7DFC3 ! important;
-	text-decoration: none;
-}
-
-.mod_urgences div.readmore a {
-	color: #FFF;
-	font-weight:bold;
-}
-.mod_urgences div.readmore a:hover {
-	color: #F2E0CB;
-	text-decoration: none;
-}
-.mod_urgences div.readmore a:visited {
-	color: #FFF;
-}
-
+/*
+ *
+ */
 ul.action_tag {
 	float: right;
 	margin: 0px;
